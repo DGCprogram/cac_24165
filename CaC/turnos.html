@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="icon" type="image/png" href="img/molecula.png">
+    <link rel= "stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header><h1>Hospital Municipal de Oncología Maria Curie</h1>
+    <h2>Solicitud de turnos</h2></header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="index.html">Principal</a>
+                </li>
+            <li>Nuestro Hospital
+                <ul>
+                    <li>Institucional
+                        <ul>
+                            <li>
+                                <a href="historia.html">Historia</a>
+                                 </li>
+                            <li>
+                                <a href="jornadas.html">Jornadas</a></li>
+                        </ul>
+                    </li>
+                    <li>Paciente
+                        <ul>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="turnos.html">Solicitud turno</a></li>
+                            <li><a href="servicios.html">Servicios médicos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Info salud
+                <ul>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li>Alimentación 
+                    <ul>
+                        <li><a href="general.html">General</a></li>
+                        <li><a href="cardiovascular.html">Cardiovascular</a></li>
+                        <li><a href="celiaca.html">Celiaca</a></li>
+                        
+
+                    </ul></li>
+                </ul>
+            </li>
+            <li>Docencia e Investigación
+                <ul>
+                    <li><a href="capacitacion.html">Capacitacion</a></li>
+                    <li><a href="enfermeria.html">Escuela de enfermería</a></li>
+                    <li><a href="residencias.html">Residencias</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section>
+    </p>
+    <h3>Completa los datos y pedi tu turno para apertura de historia clinica</h3>
+    <form action="mailto:dgc@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <label>
+        Nombre y apellido*<input type="text" name="nombre" size="30" maxlength="100" required></label>
+        <br>
+        <br>
+        <label>
+        DNI* <input type="text" name="DNI" size="8" maxlength="15" required></label>
+        <br>
+        <br>
+        <label>
+        email*<input type="text" name="email" size="25" maxlength="100" value="@" required></label>
+        <br>
+        <br>
+        Fecha
+        
+        <input type="date" name="fecha">
+        
+        <br>
+        <br>
+        Turno
+        <br>
+        <input type="radio" name="turno" value="mañana" checked> mañana
+        <br>
+        <input type="radio" name="turno" value="tarde"> tarde
+        
+ 
+        <br>
+        
+        <input type="checkbox" name="recibir_info" checked> Recibir notificacion de confirmacion
+        <br>
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+    </section>
+    <footer>
+        <div><a href="mailto:dgc@gmail.com" target="_blank">dgc@gmail.com</a>
+        <br>
+        <a href="tel: 54 11 22245567">54 11 22245567</a>
+        <br>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="x"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
