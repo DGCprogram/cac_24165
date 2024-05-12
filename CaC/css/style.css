@@ -2,6 +2,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
 
+
+@media screen and(max-width:576px){
+    .box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+        .box article{width:100%}
+    
+}
+
+@media screen and(min-width:577px) and (max-width:900px){
+    .box{display: flex;
+        flex-wrap: wrap;
+        }
+        .box article{width: 50%;}
+        .box article :first-child{width: 100%;}
+    
+} 
+
+@media screen and(min-width:901px) and (max-width:1200px){
+   
+    
+}
+*{box-sizing: border-box;}
 .novedad {color:rgb(109, 9, 9);
         background: rgb(184, 160, 109);
         text-align: center;
@@ -40,6 +66,7 @@ h1,h2,h3,h4{
     text-align: center;
     border: 1px solid grey;
     border-radius: 10px;
+    
 }
 
 
@@ -48,6 +75,7 @@ body{background: rgb(219, 215, 215);
     border-radius: 10px;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
+    overflow: scroll;
 }
 /*.serv{background: url(../img/portada.jpg), rgb(219, 215, 215);
 background-size: 80%; background-position: center;
@@ -65,15 +93,28 @@ a{
     text-decoration: none;
     color:#ffffff;
 
-/*.boxmodel{display:flex}*/
+
 }
 .lab{
     color:#5C2E79;
     text-decoration:underline;
     
 }
+.plan{
+    color:#5C2E79;
+    text-decoration:underline;
+    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
 ul, ol{
     list-style: none;
+   /* width: 100%;*/
 }
 .nav li {
     background-color: #58134f;
@@ -87,6 +128,10 @@ ul, ol{
     
 }
 .nav li a:hover {
+    background-color: #434343;
+}
+
+.nav li a:active{
     background-color: #434343;
 }
 .nav >li{
@@ -110,6 +155,8 @@ ul, ol{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+    
     
 }
 .imghosp{
@@ -133,3 +180,38 @@ ul, ol{
     border: 2px solid grey;
     text-align:center
 }
+.box{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    }
+    .box article{
+        background: #9f79b66f;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 20%;
+        border: 1px solid black;
+        
+        padding: 1%;
+        }  
+    
+          
+        .noticia{
+        
+            width: 95%;
+            }
+            .noticia img{
+                width: 100%;
+                }
+    
+    .box h2{
+        background: none;
+        color: none;
+        border: none;
+        text-align: left;
+        
+        }
