@@ -69,40 +69,40 @@
 </section>
 
 <h3>Comenta cómo fue tu experiencia con la atención</h3>
-<form action="mailto:dgc@gmail.com" method="post" enctype="text/plain">
+<form class="form-control" method="post" onsubmit="return validarFormulario()">
     <fieldset>
-    Nombre* <input type="text" name="nombre" size="30" maxlength="100" required>
-    <br>
-    <br>
-    HC* <input type="text" name="HC" size="7" maxlength="15" required>
-    <br>
-    <br>
-    email<input type="text" name="email" size="25" maxlength="100" value="@">
-    <br>
-    <br>
-    Atención 
-    <br>
-    <input type="radio" name="atención" value="ambulatoria" checked> Ambulatoria
-    <br>
-    <input type="radio" name="atención" value="internacion"> Internación
-    <br>
-    Experiencia
-    <select name="utilizacion">
-        <option value="1">Muy buena</option>
-        <option value="2">Buena</option>
-        <option value="3">Regular</option>
-        <option value="4">Mala</option>
-    </select>
-    <br>
-    Comentarios/Recomendaciones
-    <textarea cols="30" rows="7" name="Comentarios" maxlength="200">Escriba su consulta o comentario...</textarea>
-    <br>
-    <br>
-    <input type="checkbox" name="recibir_info" checked> Recibir notificacion
-    <br>
-    <br>
-    <input type="submit" value="enviar">
-    <input type="reset" value="Borrar">
+        Nombre* <input type="text" name="nombre" size="30" maxlength="100" id="nombre" placeholder="Apellido Nombre">
+        <br>
+        <br>
+        HC* <input type="text" name="HC" size="7"  id="HC" maxlength="15" required>
+        <br>
+        <br>
+        Email<input type="email" name="email" size="25" id="email" maxlength="100" placeholder="email@gmail.com">
+        <br>
+        <br>
+        Atención 
+        <br>
+        <input type="radio" name="atención" value="ambulatoria" checked> Ambulatoria
+        <br>
+        <input type="radio" name="atención" value="internacion"> Internación
+        <br>
+        Experiencia
+        <select name="utilizacion" id="exp">
+            <option value="1">Muy buena</option>
+            <option value="2">Buena</option>
+            <option value="3">Regular</option>
+            <option value="4">Mala</option>
+        </select>
+        <br>
+        Comentarios/Recomendaciones
+        <textarea cols="30" rows="7" name="Comentarios" maxlength="200" id="Comentarios">Escriba su consulta o comentario...</textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="recibir_info" checked> Recibir notificación
+        <br>
+        <br>
+        <input type="submit" value="Enviar" id="submit">
+        <input type="reset" value="Borrar">
     </fieldset>
 </form>
     <footer>
@@ -113,6 +113,8 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="x"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
-    </footer>    
+    </footer>
+    <script src="/javascript/validacion.js"></script>
+    <script src="/javascript/contacto.js"></script>  
 </body>
 </html>
