@@ -1,0 +1,235 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+
+
+@media screen and(max-width:576px){
+    .box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+        .box article{width:100%}
+    
+}
+
+@media screen and(min-width:577px) and (max-width:900px){
+    .box{display: flex;
+        flex-wrap: wrap;
+        }
+        .box article{width: 50%;}
+        .box article :first-child{width: 100%;}
+    
+} 
+
+@media screen and(min-width:901px) and (max-width:1200px){
+   
+    
+}
+
+::selection{
+    background: rgb(95, 42, 95);
+    color: white;
+}
+
+*{box-sizing: border-box;}
+.novedad {color:rgb(109, 9, 9);
+        background: rgb(184, 160, 109);
+        text-align: center;
+        font-weight: bold;
+        padding: 1px;
+        margin: 0;
+        border:0;
+        border-radius: 10px;
+        position: sticky;
+        top:0;
+        }
+header,footer{
+    background: rgba(215, 191, 233, 0.7);
+    color: #160B1D;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+header{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1,h2,h3,h4{
+    background: rgba(215, 191, 233, 0.7);
+    color: #160B1D;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+
+
+body{background: rgb(219, 215, 215); 
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    overflow: scroll;
+}
+/*.serv{background: url(../img/portada.jpg), rgb(219, 215, 215);
+background-size: 80%; background-position: center;
+background-repeat: no-repeat;}*/
+
+p{
+    font-size: 18px;
+    color:#5C2E79;
+    text-align: left;
+    overflow:auto
+
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+
+
+}
+.lab{
+    color:#5C2E79;
+    text-decoration:underline;
+    
+}
+.plan{
+    color:#5C2E79;
+    text-decoration:underline;
+    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+ul, ol{
+    list-style: none;
+   /* width: 100%;*/
+}
+.nav li {
+    background-color: #58134f;
+    color:#fff;
+    padding: 10px 15px;
+    display: block;
+    border: 1px solid black;
+    
+    /*width: 20%;
+    box-sizing: border-box;*/
+    
+}
+.nav li a:hover {
+    background-color: #434343;
+    padding: 10px;
+}
+
+.nav li a:active{
+    background-color: #434343;
+    padding: 10px;
+}
+.nav >li{
+    float:left;
+}
+    .nav li ul{
+        display: none;
+        position:absolute;
+        min-width: 140px;
+    }
+    .nav li:hover > ul{display:block}
+
+        .nav li ul li{
+            position:relative;
+        }
+            .nav li ul li ul{
+                right:-140px;
+                top:0px;
+            }
+.fachada{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    
+    
+}
+.imghosp{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.resid{
+    list-style-type: lower-roman;
+    color:#5C2E79;
+}
+.recgral{
+    border: 2px solid grey;
+    text-align:center
+}
+.reccardio{
+    border: 2px solid grey;
+    text-align:center
+}
+.recceliaco{
+    border: 2px solid grey;
+    text-align:center
+}
+.box{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    
+    }
+    .box article:hover{
+        background: #9f79b61b;
+        transform: scale(1.1,1.1);
+    }
+    .box article{
+        background: #9f79b66f;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        width: 20%;
+        border: 1px solid rgba(0, 0, 0, 0.453);
+        transition: 1s;
+        padding: 1%;
+        }  
+    
+          
+        .noticia{
+        
+            width: 95%;
+            }
+            .noticia img{
+                width: 100%;
+                }
+    
+    .box h2{
+        background: none;
+        color: none;
+        border: none;
+        text-align: left;
+        overflow: auto;
+        
+        }
+
+      
+
+       
