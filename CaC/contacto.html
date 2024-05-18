@@ -69,40 +69,75 @@
 </section>
 
 <h3>Comenta cómo fue tu experiencia con la atención</h3>
-<form class="form-control" method="post" onsubmit="return validarFormulario()">
-    <fieldset>
-        Nombre* <input type="text" name="nombre" size="30" maxlength="100" id="nombre" placeholder="Apellido Nombre">
+<form action="" class="formulario" method="post" id="formulario">
+    <fieldset class="cont" id="cont">
+        <div class="formulario_grupo" id="grupo_nombre">
+            <label for="nombre" class="formulario_label">Nombre</label>
+            <div class="formulario_grupo_input">
+                <input type="tex" name="nombre" class="formulario_input" id="nombre" placeholder="Apellido Nombre">
+                <i class="formulario_validacion-estado fa-solid fa-circle-check fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario_input-error">El nombre solo puede contener hasta 20 letras</p>
+        </div>
+        
+        <div class="formulario_grupo" id="grupo_HC">
+            <label for="HC" class="formulario_label">HC</label>
+            <div class="formulario_grupo_input">
+                <input type="number" name="HC" class="formulario_input" id="HC" placeholder="Historia clinica">
+                <i class="formulario_validacion-estado fa-solid fa-circle-check fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario_input-error">La historia clinica debe ser mayor que 0</p>
+        </div>
+        <div class="formulario_grupo" id="grupo_email">
+            <label for="mail" class="formulario_label">Email</label>
+            <div class="formulario_grupo_input">
+                <input type="email" name="email" class="formulario_input" id="mail" placeholder="email@gmail.com">
+                <i class="formulario_validacion-estado fa-solid fa-circle-check fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guionesy guion bajo.</p>
+        </div>
         <br>
+        <div class="formulario_grupo" id="grupo_atencion">
+            <div class="formulario_atencion">Atencion</div>    
+            <label class="formulario_radio">
+                <input class="formulario_radio" type="radio"    name="atencion" id="ambulatoria">Ambulatoria
+            </label>
+            <label class="formulario_radio">
+                <input class="formulario_radio" type="radio"    name="atencion" id="internacion">Internacion
+            </label>
+        </div>
         <br>
-        HC* <input type="text" name="HC" size="7"  id="HC" maxlength="15" required>
+        <div class="formulario_grupo" id="grupo_experiencia">
+            <div class="formulario_atencion">Experiencia</div>  
+                <select name="utilizacion" id="exp">
+                    <option value="1">Muy buena</option>
+                    <option value="2">Buena</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Mala</option>
+                 </select>
+            </div>
+        </div>
         <br>
+        <div class="formulario_grupo" id="grupo_comentarios">
+            <div class="formulario_atencion">Comentarios/Recomendaciones</div>
+                <textarea class="formulario_textarea" cols="30" rows="7" name="Comentarios" maxlength="200" id="Comentarios">Escriba su consulta o comentario...
+                </textarea>
+        </div>
         <br>
-        Email<input type="email" name="email" size="25" id="email" maxlength="100" placeholder="email@gmail.com">
+        <div class="formulario_grupo" id="grupo_notificacion">
+            <label class="formulario_label">
+                <input class="formulario_checkbox" type="checkbox" name="notificacion" id="notificacion">
+                Recibir notificaciones.
+            </label>
+        </div>
+        <div class="formulario_mensaje" id="formulario_mensaje">
+            <p><i class="fa-solid fa-triangle-exclamation">Error : Por favor complete el formulario correctamente</i></p>
+        </div>
         <br>
-        <br>
-        Atención 
-        <br>
-        <input type="radio" name="atención" value="ambulatoria" checked> Ambulatoria
-        <br>
-        <input type="radio" name="atención" value="internacion"> Internación
-        <br>
-        Experiencia
-        <select name="utilizacion" id="exp">
-            <option value="1">Muy buena</option>
-            <option value="2">Buena</option>
-            <option value="3">Regular</option>
-            <option value="4">Mala</option>
-        </select>
-        <br>
-        Comentarios/Recomendaciones
-        <textarea cols="30" rows="7" name="Comentarios" maxlength="200" id="Comentarios">Escriba su consulta o comentario...</textarea>
-        <br>
-        <br>
-        <input type="checkbox" name="recibir_info" checked> Recibir notificación
-        <br>
-        <br>
-        <input type="submit" value="Enviar" id="submit">
-        <input type="reset" value="Borrar">
+        <div class="formulario_grupo formulario_grupo-btn-enviar">
+            <button type="submit" class="formulario_btn">Enviar</button>
+            <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
     </fieldset>
 </form>
     <footer>
@@ -114,7 +149,8 @@
         <a href="x"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
-    <script src="/javascript/validacion.js"></script>
-    <script src="/javascript/contacto.js"></script>  
+    <script src="/javascript/validarformulario.js"></script>
+    <!--<script src="/javascript/validacion.js"></script>
+    <script src="/javascript/contacto.js"></script>-->  
 </body>
 </html>
