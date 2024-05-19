@@ -74,36 +74,39 @@
         <div class="formulario_grupo" id="grupo_nombre">
             <label for="nombre" class="formulario_label">Nombre</label>
             <div class="formulario_grupo_input">
-                <input type="tex" name="nombre" class="formulario_input" id="nombre" placeholder="Apellido Nombre">
-                <i class="formulario_validacion-estado fa-solid fa-circle-check fa-solid fa-circle-xmark"></i>
+                <input type="text" name="nombre" class="formulario_input" id="nombre" placeholder="Apellido Nombre">
+                <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
             </div>
-            <p class="formulario_input-error">El nombre solo puede contener hasta 20 letras</p>
+            <p class="formulario_input-error">El nombre solo puede contener texto de hasta 20 letras</p>
         </div>
         
         <div class="formulario_grupo" id="grupo_HC">
             <label for="HC" class="formulario_label">HC</label>
             <div class="formulario_grupo_input">
-                <input type="number" name="HC" class="formulario_input" id="HC" placeholder="Historia clinica">
-                <i class="formulario_validacion-estado fa-solid fa-circle-check fa-solid fa-circle-xmark"></i>
+                <input type="number" name="HC" class="formulario_input" id="HC" placeholder="Historia clinica" min="1">
+                <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
             </div>
             <p class="formulario_input-error">La historia clinica debe ser mayor que 0</p>
         </div>
         <div class="formulario_grupo" id="grupo_email">
-            <label for="mail" class="formulario_label">Email</label>
+            <label for="email" class="formulario_label">Email</label>
             <div class="formulario_grupo_input">
                 <input type="email" name="email" class="formulario_input" id="mail" placeholder="email@gmail.com">
-                <i class="formulario_validacion-estado fa-solid fa-circle-check fa-solid fa-circle-xmark"></i>
+                <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
             </div>
-            <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guionesy guion bajo.</p>
+            <p class="formulario_input-error">El campo correo debe contener el @ y puede estar formado por letras, numeros, puntos, guiones y guion bajo.</p>
         </div>
         <br>
         <div class="formulario_grupo" id="grupo_atencion">
             <div class="formulario_atencion">Atencion</div>    
             <label class="formulario_radio">
-                <input class="formulario_radio" type="radio"    name="atencion" id="ambulatoria">Ambulatoria
+                <input class="formulario_radio" type="radio" name="atencion" id="ambulatoria">Ambulatoria
             </label>
             <label class="formulario_radio">
-                <input class="formulario_radio" type="radio"    name="atencion" id="internacion">Internacion
+                <input class="formulario_radio" type="radio" name="atencion" id="internacion">Internacion
             </label>
         </div>
         <br>
@@ -131,9 +134,8 @@
             </label>
         </div>
         <div class="formulario_mensaje" id="formulario_mensaje">
-            <p><i class="fa-solid fa-triangle-exclamation">Error : Por favor complete el formulario correctamente</i></p>
+            <p><i class="fa-solid fa-triangle-exclamation"></i> Error: Por favor complete el formulario correctamente</p>
         </div>
-        <br>
         <div class="formulario_grupo formulario_grupo-btn-enviar">
             <button type="submit" class="formulario_btn">Enviar</button>
             <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
@@ -150,7 +152,5 @@
         </div>
     </footer>
     <script src="/javascript/validarformulario.js"></script>
-    <!--<script src="/javascript/validacion.js"></script>
-    <script src="/javascript/contacto.js"></script>-->  
 </body>
 </html>
